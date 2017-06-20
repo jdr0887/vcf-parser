@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.renci</groupId>
   <artifactId>vcf-parser</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
+  <version>0.0.4</version>
   <packaging>bundle</packaging>
   <properties>
     <commons.io.version>2.4</commons.io.version>
@@ -22,7 +22,7 @@
     <url>https://github.com/jdr0887/vcf-parser</url>
     <developerConnection>scm:git:git@github.com:jdr0887/vcf-parser.git</developerConnection>
     <connection>scm:git:git@github.com:jdr0887/vcf-parser.git</connection>
-    <tag>HEAD</tag>
+    <tag>vcf-parser-0.0.4</tag>
   </scm>
   <developers>
     <developer>
