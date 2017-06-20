@@ -1,0 +1,67 @@
+##fileformat=VCFv4.1
+##ApplyRecalibration="analysis_type=ApplyRecalibration input_file=[] read_buffer_size=null phone_home=NO_ET read_filter=[] intervals=null excludeIntervals=null interval_set_rule=UNION interval_merging=ALL reference_sequence=/proj/renci/sequence_analysis/references/BUILD.37.1/bwa061sam0118/BUILD.37.1.sorted.shortid.fa rodBind=[] nonDeterministicRandomSeed=false downsampling_type=NONE downsample_to_fraction=null downsample_to_coverage=null baq=OFF baqGapOpenPenalty=40.0 performanceLog=null useOriginalQualities=false defaultBaseQualities=-1 validation_strictness=SILENT unsafe=null num_threads=1 num_cpu_threads=null num_io_threads=null num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false logging_level=INFO log_to_file=null help=false input=[(RodBinding name=input source=/proj/seq/mapseq/120712_UNC13-SN749_0183_AD13LKACXX/Exome/NCG_00062-LT_1/120712_UNC13-SN749_0183_AD13LKACXX_CAGATC_L001.fixed-rg.deduped.realign.fixmate.recal.variant.vcf)] recal_file=/proj/seq/mapseq/120712_UNC13-SN749_0183_AD13LKACXX/Exome/NCG_00062-LT_1/120712_UNC13-SN749_0183_AD13LKACXX_CAGATC_L001.fixed-rg.deduped.realign.fixmate.recal.variant.recal tranches_file=/proj/seq/mapseq/120712_UNC13-SN749_0183_AD13LKACXX/Exome/NCG_00062-LT_1/120712_UNC13-SN749_0183_AD13LKACXX_CAGATC_L001.fixed-rg.deduped.realign.fixmate.recal.variant.tranches out=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub NO_HEADER=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub sites_only=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub ts_filter_level=99.0 ignore_filter=null mode=SNP filter_mismatching_base_and_quals=false"
+##FILTER=<ID=LowQual,Description="Low quality">
+##FILTER=<ID=TruthSensitivityTranche99.00to99.90,Description="Truth sensitivity tranche level at VSQ Lod: -13.3889 <= x < 0.1325">
+##FILTER=<ID=TruthSensitivityTranche99.90to100.00+,Description="Truth sensitivity tranche level at VQS Lod < -37602.9782">
+##FILTER=<ID=TruthSensitivityTranche99.90to100.00,Description="Truth sensitivity tranche level at VSQ Lod: -37602.9782 <= x < -13.3889">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+##FORMAT=<ID=GQ,Number=1,Type=Float,Description="Genotype Quality">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Normalized, Phred-scaled likelihoods for genotypes as defined in the VCF specification">
+##INFO=<ID=AB,Number=1,Type=Float,Description="Allele Balance for hets (ref/(ref+alt))">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes, for each ALT allele, in the same order as listed">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency, for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=BaseQRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref base qualities">
+##INFO=<ID=DB,Number=0,Type=Flag,Description="dbSNP Membership">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
+##INFO=<ID=DS,Number=0,Type=Flag,Description="Were any of the samples downsampled?">
+##INFO=<ID=Dels,Number=1,Type=Float,Description="Fraction of Reads Containing Spanning Deletions">
+##INFO=<ID=FS,Number=1,Type=Float,Description="Phred-scaled p-value using Fisher's exact test to detect strand bias">
+##INFO=<ID=HRun,Number=1,Type=Integer,Description="Largest Contiguous Homopolymer Run of Variant Allele In Either Direction">
+##INFO=<ID=HaplotypeScore,Number=1,Type=Float,Description="Consistency of the site with at most two segregating haplotypes">
+##INFO=<ID=InbreedingCoeff,Number=1,Type=Float,Description="Inbreeding coefficient as estimated from the genotype likelihoods per-sample when compared against the Hardy-Weinberg expectation">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQ0,Number=1,Type=Integer,Description="Total Mapping Quality Zero Reads">
+##INFO=<ID=MQRankSum,Number=1,Type=Float,Description="Z-score From Wilcoxon rank sum test of Alt vs. Ref read mapping qualities">
+##INFO=<ID=QD,Number=1,Type=Float,Description="Variant Confidence/Quality by Depth">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt vs. Ref read position bias">
+##INFO=<ID=VQSLOD,Number=1,Type=Float,Description="Log odds ratio of being a true variant versus being false under the trained gaussian mixture model">
+##INFO=<ID=culprit,Number=1,Type=String,Description="The annotation which was the worst performing in the Gaussian mixture model, likely the reason why the variant was filtered out">
+##UnifiedGenotyper="analysis_type=UnifiedGenotyper input_file=[/proj/seq/mapseq/120712_UNC13-SN749_0183_AD13LKACXX/Exome/NCG_00062-LT_1/120712_UNC13-SN749_0183_AD13LKACXX_CAGATC_L001.fixed-rg.deduped.realign.fixmate.recal.bam] read_buffer_size=null phone_home=NO_ET read_filter=[] intervals=[/proj/renci/sequence_analysis/resources/intervals/agilent_v4_capture_region_pm_75.shortid.interval_list] excludeIntervals=null interval_set_rule=UNION interval_merging=ALL reference_sequence=/proj/renci/sequence_analysis/references/BUILD.37.1/bwa061sam0118/BUILD.37.1.sorted.shortid.fa rodBind=[] nonDeterministicRandomSeed=false downsampling_type=NONE downsample_to_fraction=null downsample_to_coverage=250 baq=OFF baqGapOpenPenalty=40.0 performanceLog=null useOriginalQualities=false defaultBaseQualities=-1 validation_strictness=SILENT unsafe=null num_threads=4 num_cpu_threads=null num_io_threads=null num_bam_file_handles=null read_group_black_list=null pedigree=[] pedigreeString=[] pedigreeValidationType=STRICT allow_intervals_with_unindexed_bam=false logging_level=INFO log_to_file=null help=false genotype_likelihoods_model=BOTH p_nonref_model=EXACT heterozygosity=0.001 pcr_error_rate=1.0E-4 genotyping_mode=DISCOVERY output_mode=EMIT_ALL_SITES standard_min_confidence_threshold_for_calling=30.0 standard_min_confidence_threshold_for_emitting=0.0 computeSLOD=false alleles=(RodBinding name= source=UNBOUND) min_base_quality_score=17 max_deletion_fraction=0.05 multiallelic=false max_alternate_alleles=5 min_indel_count_for_genotyping=5 indel_heterozygosity=1.25E-4 indelGapContinuationPenalty=10.0 indelGapOpenPenalty=45.0 indelHaplotypeSize=80 bandedIndel=false indelDebug=false ignoreSNPAlleles=false dbsnp=(RodBinding name=dbsnp source=/proj/renci/sequence_analysis/resources/gatk/bundle/1.2/b37/dbsnp_132.b37.renci.shortid.vcf) out=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub NO_HEADER=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub sites_only=org.broadinstitute.sting.gatk.io.stubs.VCFWriterStub debug_file=null annotation=[AlleleBalance, DepthOfCoverage, HomopolymerRun, MappingQualityZero, QualByDepth, RMSMappingQuality, HaplotypeScore] excludeAnnotation=[] filter_mismatching_base_and_quals=false"
+##contig=<ID=NC_000001.10,length=249250621>
+##contig=<ID=NC_000002.11,length=243199373>
+##contig=<ID=NC_000003.11,length=198022430>
+##contig=<ID=NC_000004.11,length=191154276>
+##contig=<ID=NC_000005.9,length=180915260>
+##contig=<ID=NC_000006.11,length=171115067>
+##contig=<ID=NC_000007.13,length=159138663>
+##contig=<ID=NC_000008.10,length=146364022>
+##contig=<ID=NC_000009.11,length=141213431>
+##contig=<ID=NC_000010.10,length=135534747>
+##contig=<ID=NC_000011.9,length=135006516>
+##contig=<ID=NC_000012.11,length=133851895>
+##contig=<ID=NC_000013.10,length=115169878>
+##contig=<ID=NC_000014.8,length=107349540>
+##contig=<ID=NC_000015.9,length=102531392>
+##contig=<ID=NC_000016.9,length=90354753>
+##contig=<ID=NC_000017.10,length=81195210>
+##contig=<ID=NC_000018.9,length=78077248>
+##contig=<ID=NC_000019.9,length=59128983>
+##contig=<ID=NC_000020.10,length=63025520>
+##contig=<ID=NC_000021.8,length=48129895>
+##contig=<ID=NC_000022.10,length=51304566>
+##contig=<ID=NC_000023.10,length=155270560>
+##contig=<ID=NC_000024.9,length=59373566>
+##reference=file:///proj/renci/sequence_analysis/references/BUILD.37.1/bwa061sam0118/BUILD.37.1.sorted.shortid.fa
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NCG_00062
+NC_000001.10	186026474	rs12129650	T	C	517.88	PASS	AC=2;AF=1.00;AN=2;DB;DP=17;Dels=0.00;FS=0.000;HRun=0;HaplotypeScore=0.0000;MQ=60.00;MQ0=0;QD=30.46;VQSLOD=8.5953;culprit=HaplotypeScore	GT:AD:DP:GQ:PL	1/1:0,17:17:39.13:551,39,0
+NC_000002.11	160901517	rs4665143	A	G	673.62	PASS	AB=0.627;AC=1;AF=0.50;AN=2;BaseQRankSum=-0.281;DB;DP=75;Dels=0.00;FS=3.371;HRun=0;HaplotypeScore=0.6651;MQ=60.00;MQ0=0;MQRankSum=0.124;QD=8.98;ReadPosRankSum=1.246;VQSLOD=4.6881;culprit=QD	GT:AD:DP:GQ:PL	0/1:47,28:75:99:704,0,1400
+NC_000004.11	41673604	rs11734372	T	C	174.33	PASS	AB=0.417;AC=1;AF=0.50;AN=2;BaseQRankSum=-1.034;DB;DP=12;Dels=0.00;FS=3.090;HRun=0;HaplotypeScore=0.0000;MQ=56.04;MQ0=0;MQRankSum=1.034;QD=14.53;ReadPosRankSum=-0.896;VQSLOD=2.3401;culprit=MQ	GT:AD:DP:GQ:PL	0/1:5,7:12:99:204,0,120
+NC_000005.9	112162854	rs2229992	T	C	162.08	PASS	AB=0.650;AC=1;AF=0.50;AN=2;BaseQRankSum=0.792;DB;DP=20;Dels=0.00;FS=0.000;HRun=0;HaplotypeScore=0.8667;MQ=60.00;MQ0=0;MQRankSum=-0.079;QD=8.10;ReadPosRankSum=-1.506;VQSLOD=4.5550;culprit=QD	GT:AD:DP:GQ:PL	0/1:13,7:20:99:192,0,377
+NC_000006.11	90661576	rs2236181	T	C	978.91	PASS	AC=2;AF=1.00;AN=2;DB;DP=35;Dels=0.00;FS=0.000;HRun=1;HaplotypeScore=0.0000;MQ=60.00;MQ0=0;QD=27.97;VQSLOD=7.7509;culprit=FS	GT:AD:DP:GQ:PL	1/1:0,35:35:78.23:1012,78,0
+NC_000009.11	79325558	rs600859	G	C	1306.53	PASS	AC=2;AF=1.00;AN=2;DB;DP=42;Dels=0.00;FS=0.000;HRun=0;HaplotypeScore=0.0000;MQ=58.89;MQ0=0;QD=31.11;VQSLOD=8.1336;culprit=HaplotypeScore	GT:AD:DP:GQ:PL	1/1:0,42:42:99:1340,105,0
+NC_000011.9	26677947	rs10835051	C	T	1027.90	PASS	AC=2;AF=1.00;AN=2;DB;DP=33;Dels=0.00;FS=0.000;HRun=1;HaplotypeScore=0.0000;MQ=60.00;MQ0=0;QD=31.15;VQSLOD=8.7662;culprit=HaplotypeScore	GT:AD:DP:GQ:PL	1/1:0,33:33:78.25:1061,78,0
+NC_000012.11	109994870	rs9593	A	T	64.54	PASS	AB=0.571;AC=1;AF=0.50;AN=2;BaseQRankSum=-0.550;DB;DP=7;Dels=0.00;FS=0.000;HRun=1;HaplotypeScore=0.0000;MQ=60.00;MQ0=0;MQRankSum=-0.550;QD=9.22;ReadPosRankSum=-1.754;VQSLOD=5.0825;culprit=QD	GT:AD:DP:GQ:PL	0/1:4,3:7:94.53:95,0,135
+NC_000013.10	23824783	rs1800351	T	G	570.88	PASS	AB=0.394;AC=1;AF=0.50;AN=2;BaseQRankSum=4.477;DB;DP=33;Dels=0.00;FS=0.000;HRun=0;HaplotypeScore=0.0000;MQ=60.00;MQ0=0;MQRankSum=1.750;QD=17.30;ReadPosRankSum=0.608;VQSLOD=5.4924;culprit=HaplotypeScore	GT:AD:DP:GQ:PL	0/1:13,20:33:99:601,0,304
